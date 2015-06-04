@@ -293,8 +293,8 @@ int indexCount;
 #pragma mark - View Management Methods
 - (void)viewDidLoad {
 	[super viewDidLoad];
-    [self saveObjectPlain];
-   // [self createFBloginView];
+    //[self saveObjectPlain];
+    [self createFBloginView];
    // [self callApiUsingNSURLSession];
     //[self callApiWithParameter];
    // [self callAPI];
@@ -426,38 +426,13 @@ int indexCount;
     FBLoginView *loginview = [[FBLoginView alloc] initWithReadPermissions:[NSArray arrayWithObjects:@"email",@"user_friends", nil]];
     
     loginview.frame = CGRectMake(35,310,250,38);
-#ifdef __IPHONE_7_0
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         loginview.frame =CGRectMake(35,310,250,38);
     }
-#endif
-#endif
-#endif
-    
-    for (id obj in loginview.subviews)
-    {
-        if ([obj isKindOfClass:[UIButton class]])
-        {
-            UIButton * loginButton =  obj;
-            UIImage *loginImage = [UIImage imageNamed:@"btn-facebook.png"];
-            [loginButton setBackgroundImage:loginImage forState:UIControlStateNormal];
-            [loginButton setBackgroundImage:nil forState:UIControlStateSelected];
-            [loginButton setBackgroundImage:nil forState:UIControlStateHighlighted];
-            [loginButton sizeToFit];
-        }
-        if ([obj isKindOfClass:[UILabel class]])
-        {
-            UILabel * loginLabel =  obj;
-            loginLabel.text = @"";
-            loginLabel.frame = CGRectMake(0, 0, 0, 37);
-        }
-    }
-    loginview.delegate = self;
-    
-    
     [self.view addSubview:loginview];
+    
+    
+   
 
 }
 #pragma mark - FBLoginView Delegate method implementation

@@ -27,9 +27,9 @@
 		76E61B1D13BD6A6B0062C954 /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E61B1B13BD6A6B0062C954 /* airplane.png */; };
 		76E61B1E13BD6A6B0062C954 /* airplane@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E61B1C13BD6A6B0062C954 /* airplane@2x.png */; };
 		76EFB41D124789F5003020A7 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EFB41B124789F5003020A7 /* TestViewController.m */; };
-		980447751B0A1A9F005951B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980447741B0A1A9F005951B6 /* FacebookSDK.framework */; };
 		987A4FE81B1708FC00054CA2 /* V8HorizontalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987A4FE61B1708FC00054CA2 /* V8HorizontalPickerView.m */; };
 		987A4FEB1B17506400054CA2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 987A4FEA1B17506400054CA2 /* Person.m */; };
+		98C5818A1B2030570086883C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C581891B2030570086883C /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,12 +58,12 @@
 		76EFB41A124789F5003020A7 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		76EFB41B124789F5003020A7 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HorzPickerTestApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HorzPickerTestApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		980447741B0A1A9F005951B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/SlidingBar/SlidingBar/FacebookSDK.framework; sourceTree = "<group>"; };
 		987A4FE51B1708FC00054CA2 /* V8HorizontalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V8HorizontalPickerView.h; sourceTree = "<group>"; };
 		987A4FE61B1708FC00054CA2 /* V8HorizontalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V8HorizontalPickerView.m; sourceTree = "<group>"; };
 		987A4FE71B1708FC00054CA2 /* V8HorizontalPickerViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V8HorizontalPickerViewProtocol.h; sourceTree = "<group>"; };
 		987A4FE91B17506400054CA2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		987A4FEA1B17506400054CA2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		98C581891B2030570086883C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980447751B0A1A9F005951B6 /* FacebookSDK.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				98C5818A1B2030570086883C /* FacebookSDK.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
@@ -137,7 +137,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				980447741B0A1A9F005951B6 /* FacebookSDK.framework */,
+				98C581891B2030570086883C /* FacebookSDK.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -271,6 +271,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/TapashMollick/Documents/SlidingBar/SlidingBar,
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -290,6 +291,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/TapashMollick/Documents/SlidingBar/SlidingBar,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HorzPickerTestApp_Prefix.pch;
@@ -323,6 +325,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/TapashMollick/Documents/SlidingBar/SlidingBar,
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

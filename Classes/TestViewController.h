@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "V8HorizontalPickerView.h"
 #import "FacebookSDK/FacebookSDK.h"
-//#import "FBShimmeringView.h"
 
 @class V8HorizontalPickerView;
 
